@@ -1,21 +1,48 @@
+/* HEADER */
+header{
+    position: sticky;
+    top: 0;
+}
+
 .fa-bell{
     color: rgb(255, 140, 32);
 }
 
-#basic-addon1{
+header #basic-addon1{
     border: 0;
     background-color: rgb(229, 229, 229);
     vertical-align: middle;
     margin-top: 0.2rem;
 }
 
-input.form-control{
+header input.form-control{
     border: 0;
     background-color: rgb(229, 229, 229);
 }
 
-.input-group{
+header .input-group{
     background-color: rgb(229, 229, 229);
     border-radius: 1rem;
     padding: 0.5rem;
+}
+
+/* BARRA LATERALE */
+#lateral-bar{
+    background-color: rgb(15, 41, 60);
+}
+
+#lateral-bar i{
+    color: white;
+}
+
+/* PRINCIPLARE */
+/* SEZIONE 1 */
+#top{
+    background-color: rgb(0, 120, 228);
+    color: white;
+}
+
+.btn-primary{
+    background-color: grey;
+    opacity: 0.4;
 }
