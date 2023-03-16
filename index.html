@@ -15,8 +15,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <img src="./assets/img/logo.svg" alt="">
+            <div class="container">
+              <img class="img-fluid" src="./assets/img/mobile-logo.png" alt="" width="60px">
               <div>
                 <form class="container-fluid">
                     <div class="input-group">
@@ -57,7 +57,7 @@
                     <div class="container">
                       <div class="row">
                         <div class="col-md-4 col-12 py-3">
-                          <h3>Boolean</h3>
+                          <h3 class="d-inline">Boolean</h3>
                           <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
                           <span class="badge rounded-pill text-bg-secondary">3 app</span>
                           <i class="fa-solid fa-angles-right"></i>
@@ -74,7 +74,7 @@
                         <div class="col-md-4 col-12 py-3">
                             <span>Nuovo studente</span>
                             <!-- OFFCANVAS -->
-                            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <a class="btn btn-primary btn-apertura" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                 <i class="fa-solid fa-plus-large text-light"></i>
                             </a>
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -100,8 +100,9 @@
                                 <!-- EMAIL -->
                                 <div class="mb-3">
                                     <label for="basic-url" class="form-label">Email</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="@">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
                                     </div>
                                 </div>
                                 <!-- PASSWORD -->
@@ -114,8 +115,9 @@
                                 <!-- RIPETI EMAIL -->
                                 <div class="mb-3">
                                     <label for="basic-url" class="form-label">Ripeti email</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="@">
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
                                     </div>
                                 </div>
                                 <!-- RIPETI PASSWORD --> 
@@ -126,39 +128,214 @@
                                     </div>
                                 </div>
                                 <!-- INDIRIZZO -->
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                    <span class="input-group-text">@</span>
-                                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                                <div class="mb-3">
+                                    <label for="basic-url" class="form-label">Indirizzo</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    </div>
                                 </div>
                                 <!-- CITTA' -->                 
-                                <div class="input-group">
-                                    <span class="input-group-text">With textarea</span>
-                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                <div class="mb-3">
+                                    <label for="basic-url" class="form-label">Città</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    </div>
                                 </div>
                                 <!-- STATO -->
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                    <span class="input-group-text">@</span>
-                                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-                                </div>
+                                <div class="mb-3">
+                                    <label for="basic-url" class="form-label">Stato</label>
+                                    <div class="input-group">
+                                        <select class="form-select" id="inputGroupSelect01">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Lussemburgo</option>
+                                            <option value="3">Spagna</option>
+                                            <option value="4">Olanda</option>
+                                            <option value="5">Svizzera</option>
+                                            <option value="6">Germania</option>
+                                        </select>    
+                                    </div>
+                                  </div>
                                 <!-- CAP -->
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                    <span class="input-group-text">@</span>
-                                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                                <div class="mb-3">
+                                    <label for="basic-url" class="form-label">CAP</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    </div>
                                 </div>
                                 <!-- FOTO -->
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                    <span class="input-group-text">@</span>
-                                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                                <div class="mb-3">
+                                    <label for="basic-url" class="form-label">Foto</label>
+                                    <div class="input-group">
+                                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    </div>    
+                                </div>
+                                <!-- SELEZIONA PER PROSEGUIRE -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Seleziona per proseguire
+                                    </label>
+                                </div>
+                                <!-- BOTTONI -->
+                                <div>
+                                    <button type="button" class="btn btn-primary">Salva</button>
+                                    <button type="button" class="btn btn-warning">Svuota</button>
                                 </div>
                             </div>
                         </div>  
                       </div>
                     </div>
-                  </section>
+                </section>
+                <!-- PROSSIME CLASSI -->
+                <section>
+                    <div class="px-2 py-3">
+                        <div class="bg-secondary-subtle border rounded-top p-2">
+                            <h3>Prossime classi</h3>
+                        </div>
+                        <div class="border rounded-bottom px-2 py-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>Nome</div>
+                                    <div>
+                                        <span class="mx-3">Stato</span>
+                                        <span class="mx-3">Azioni</span>
+                                    </div>
+                                </li>
+                                <!-- RIGA 1 -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                        Classe 75
+                                    </div>
+                                    <div>
+                                        <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                        <span>
+                                            <i class="fa-solid fa-pen p-2 border rounded"></i>
+                                            <i class="fa-solid fa-trash p-2 border rounded"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- RIGA 2 -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                        Classe 76
+                                    </div>
+                                    <div>
+                                        <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                        <span>
+                                            <i class="fa-solid fa-pen p-2 border rounded"></i>
+                                            <i class="fa-solid fa-trash p-2 border rounded"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- RIGA 3 -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                        Classe 77
+                                    </div>
+                                    <div>
+                                        <span class="badge rounded-pill text-bg-warning text-light mx-3">Warning</span>
+                                        <span>
+                                            <i class="fa-solid fa-pen p-2 border rounded"></i>
+                                            <i class="fa-solid fa-trash p-2 border rounded"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- RIGA 4 -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                        Classe 78
+                                    </div>
+                                    <div>
+                                        <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                        <span>
+                                            <i class="fa-solid fa-pen p-2 border rounded"></i>
+                                            <i class="fa-solid fa-trash p-2 border rounded"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- RIGA 5 -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                        Classe 79
+                                    </div>
+                                    <div>
+                                        <span class="badge rounded-pill text-bg-danger mx-3">Failed</span>
+                                        <span>
+                                            <i class="fa-solid fa-pen p-2 border rounded"></i>
+                                            <i class="fa-solid fa-trash p-2 border rounded"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- RIGA 6 -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                        Classe 80
+                                    </div>
+                                    <div>
+                                        <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                        <span>
+                                            <i class="fa-solid fa-pen p-2 border rounded"></i>
+                                            <i class="fa-solid fa-trash p-2 border rounded"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- RIGA 7 -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                        Classe 81
+                                    </div>
+                                    <div>
+                                        <span class="badge rounded-pill text-bg-danger mx-3">Failed</span>
+                                        <span>
+                                            <i class="fa-solid fa-pen p-2 border rounded"></i>
+                                            <i class="fa-solid fa-trash p-2 border rounded"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- RIGA 8 -->
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
+                                        Classe 82
+                                    </div>
+                                    <div>
+                                        <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                        <span>
+                                            <i class="fa-solid fa-pen p-2 border rounded"></i>
+                                            <i class="fa-solid fa-trash p-2 border rounded"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- GRAFICO -->
+                <section>
+                    <div class="card my-2" style="width: 90%;">
+                        <img src="./assets/img/stats.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">Utenti attivi</h5>
+                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Gennaio: 1200</li>
+                          <li class="list-group-item">Febbraio: 800</li>
+                          <li class="list-group-item">Marzo: 1500</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Visuallizza report approfondito</a>
+                        </div>
+                    </div>
+                </section>
             </div>
     </main>
 

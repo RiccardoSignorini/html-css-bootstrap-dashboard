@@ -1,7 +1,6 @@
 /* HEADER */
 header{
-    position: sticky;
-    top: 0;
+    background-color: rgb(255, 255, 255);
 }
 
 .fa-bell{
@@ -18,6 +17,7 @@ header #basic-addon1{
 header input.form-control{
     border: 0;
     background-color: rgb(229, 229, 229);
+    width: 80%;
 }
 
 header .input-group{
@@ -42,7 +42,7 @@ header .input-group{
     color: white;
 }
 
-.btn-primary{
+.btn-apertura{
     background-color: grey;
     opacity: 0.4;
 }
