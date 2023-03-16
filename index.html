@@ -77,75 +77,63 @@
                             <a class="btn btn-primary btn-apertura" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                 <i class="fa-solid fa-plus-large text-light"></i>
                             </a>
-                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
                                 <h6 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h6>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                                <!-- NOME -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Nome</label>
-                                    <div class="input-group">
-                                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                <form class="row g-3">
+                                    <!-- NOME -->
+                                    <div class="col-md-6">
+                                      <label for="inputEmail4" class="form-label">Nome</label>
+                                      <input type="email" class="form-control" id="inputEmail4">
                                     </div>
-                                </div>
-                                <!-- COGNOME -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Cognome</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    <!-- COGNOME -->
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Cognome</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
                                     </div>
-                                </div>
-                                <!-- EMAIL -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Email</label>
-                                    <div class="input-group flex-nowrap">
-                                        <span class="input-group-text" id="addon-wrapping">@</span>
-                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                    <!-- EMAIL -->
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <div class="input-group">
+                                          <div class="input-group-text">@</div>
+                                          <input type="text" class="form-control" id="autoSizingInputGroup">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- PASSWORD -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Password</label>
-                                    <div class="input-group">
-                                        <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    <!-- PASSWORD -->
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
                                     </div>
-                                </div>
-                                <!-- RIPETI EMAIL -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Ripeti email</label>
-                                    <div class="input-group flex-nowrap">
-                                        <span class="input-group-text" id="addon-wrapping">@</span>
-                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                    <!-- RIPETI EMAIL -->
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Ripeti email</label>
+                                        <div class="input-group">
+                                          <div class="input-group-text">@</div>
+                                          <input type="text" class="form-control" id="autoSizingInputGroup">
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- RIPETI PASSWORD --> 
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Ripeti password</label>
-                                    <div class="input-group">
-                                        <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    <!-- RIPETI PASSWORD -->
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Ripeti password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
                                     </div>
-                                </div>
-                                <!-- INDIRIZZO -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Indirizzo</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    <!-- INDIRIZZO -->
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress">
                                     </div>
-                                </div>
-                                <!-- CITTA' -->                 
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Città</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    <!-- CITTA' -->
+                                    <div class="col-md-4">
+                                        <label for="inputEmail4" class="form-label">Città</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
                                     </div>
-                                </div>
-                                <!-- STATO -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Stato</label>
-                                    <div class="input-group">
-                                        <select class="form-select" id="inputGroupSelect01">
+                                    <!-- STATO -->
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">State</label>
+                                        <select id="inputState" class="form-select">
                                             <option selected>Scegli...</option>
                                             <option value="1">Italia</option>
                                             <option value="2">Lussemburgo</option>
@@ -153,36 +141,38 @@
                                             <option value="4">Olanda</option>
                                             <option value="5">Svizzera</option>
                                             <option value="6">Germania</option>
-                                        </select>    
+                                        </select>
                                     </div>
-                                  </div>
-                                <!-- CAP -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">CAP</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    <!-- CAP -->
+                                    <div class="col-md-4">
+                                        <label for="inputZip" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="inputZip">
                                     </div>
-                                </div>
-                                <!-- FOTO -->
-                                <div class="mb-3">
-                                    <label for="basic-url" class="form-label">Foto</label>
-                                    <div class="input-group">
-                                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                                    </div>    
-                                </div>
-                                <!-- SELEZIONA PER PROSEGUIRE -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Seleziona per proseguire
-                                    </label>
-                                </div>
-                                <!-- BOTTONI -->
-                                <div>
-                                    <button type="button" class="btn btn-primary">Salva</button>
-                                    <button type="button" class="btn btn-warning">Svuota</button>
-                                </div>
+                                    <!-- FOTO -->
+                                    <div class="COL-12">
+                                        <label for="basic-url" class="form-label">Foto</label>
+                                        <div class="input-group">
+                                            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                        </div>    
+                                    </div>
+                                      <!-- SELECT -->
+                                      <div class="col-12">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                                          <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                          </label>
+                                        </div>
+                                      </div>
+                                    <!-- BOTTONI -->
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">Salva</button>
+                                      <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                </form>
                             </div>
+
+
                         </div>  
                       </div>
                     </div>
@@ -315,6 +305,82 @@
                                     </div>
                                 </li>
                               </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- FAQ -->
+                <section>
+                    <div class="px-2 py-3">
+                        <div class="bg-secondary-subtle border rounded-top p-2">
+                            <h3>F.A.Q.</h3>
+                        </div>
+                        <div class="border rounded-bottom px-2 py-3 bg-white">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Come aggiungere un nuovo studente?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem expedita quas error, cum temporibus mollitia quibusdam aperiam ut voluptate, animi alias voluptatem fuga reiciendis sequi vel, nam molestias unde ad?
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Come posso accedere alle informazioni del mio account?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea earum suscipit eligendi iusto tempore nulla ipsum ipsam? Esse, accusamus. Sequi odit quibusdam, esse ipsam numquam commodi ab unde ea.
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure officiis harum aut, doloribus vero cupiditate amet magni maxime, placeat debitis alias facilis. Cum, ipsam adipisci nesciunt modi debitis ad.
+                                    </div>
+                                </div>
+                                </div>
+                            </div>        
+                        </div>
+                        
+                        
+                    </div>
+                </section>
+                <!-- TODO -->
+                <section>
+                    <div class="px-2 py-3">
+                        <div class="bg-secondary-subtle border rounded-top p-2">
+                            <h3>Todo</h3>
+                        </div>
+                        <div class="border rounded-bottom px-2 py-3 bg-white">
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                      <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                      <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                      <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </section>
