@@ -14,9 +14,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-              <img class="img-fluid" src="./assets/img/mobile-logo.png" alt="" width="60px">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+            <div class="container bg-white">
+              <img class="d-lg-none" src="./assets/img/mobile-logo.png" alt="" width="60px">
+              <img class="d-none d-lg-inline" src="./assets/img/logo.svg" alt="">
               <div>
                 <form class="container-fluid">
                     <div class="input-group">
@@ -33,22 +34,26 @@
     <main>
         <div id="struttura" class="d-flex">
             <!-- BARRA LATERALE -->
-            <div id="lateral-bar" class="text-center">
+            <div id="lateral-bar" class="text-center pt-3">
                 <!-- PARTE ALTA LATERALE -->
                 <div id="lateral-top">
                     <div>
                         <i class="fa-solid fa-house"></i>
+                        <span class="d-none d-lg-inline px-1 text-light">Home</span>
                     </div>
                     <div>
                         <i class="fa-solid fa-chart-simple"></i>
+                        <span class="d-none d-lg-inline px-1 text-light">Stats</span>
                     </div>
                     <div>
                         <i class="fa-solid fa-signal"></i>
+                        <span class="d-none d-lg-inline px-1 text-light">Signals</span>
                     </div>
                 </div>
                 <!-- PARTE BASSA LATERALE -->
                 <div id="lateral-bottom">
                     <i class="fa-solid fa-gear"></i>
+                    <span class="d-none d-lg-inline px-1 text-light">Admin</span>
                 </div>
             </div>
             <!-- PRINCIPALE -->
@@ -80,7 +85,7 @@
                         <div class="col-md-4 col-12 p-4">
                           <p>Studenti online negli ultimi 30 minuti</p>
                           <div>
-                            <span>125</span>
+                            <span class="fs-1">125</span>
                           </div>
                         </div>
                         <div class="col-md-3 col-12 p-4">
@@ -196,20 +201,24 @@
                         <div class="border rounded-bottom px-2 py-3 bg-white">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>Nome</div>
-                                    <div>
+                                    <div class="col-6">Nome</div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="mx-3">Stato</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="mx-3">Azioni</span>
                                     </div>
                                 </li>
                                 <!-- RIGA 1 -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="col-6">
                                         <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                         Classe 75
                                     </div>
-                                    <div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span>
                                             <i class="fa-solid fa-pen p-2 border rounded"></i>
                                             <i class="fa-solid fa-trash p-2 border rounded"></i>
@@ -218,12 +227,14 @@
                                 </li>
                                 <!-- RIGA 2 -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="col-6">
                                         <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                         Classe 76
                                     </div>
-                                    <div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span>
                                             <i class="fa-solid fa-pen p-2 border rounded"></i>
                                             <i class="fa-solid fa-trash p-2 border rounded"></i>
@@ -232,12 +243,14 @@
                                 </li>
                                 <!-- RIGA 3 -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="col-6">
                                         <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                         Classe 77
                                     </div>
-                                    <div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="badge rounded-pill text-bg-warning text-light mx-3">Warning</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span>
                                             <i class="fa-solid fa-pen p-2 border rounded"></i>
                                             <i class="fa-solid fa-trash p-2 border rounded"></i>
@@ -246,12 +259,14 @@
                                 </li>
                                 <!-- RIGA 4 -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="col-6">
                                         <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                         Classe 78
                                     </div>
-                                    <div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span>
                                             <i class="fa-solid fa-pen p-2 border rounded"></i>
                                             <i class="fa-solid fa-trash p-2 border rounded"></i>
@@ -260,12 +275,14 @@
                                 </li>
                                 <!-- RIGA 5 -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="col-6">
                                         <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                         Classe 79
                                     </div>
-                                    <div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="badge rounded-pill text-bg-danger mx-3">Failed</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span>
                                             <i class="fa-solid fa-pen p-2 border rounded"></i>
                                             <i class="fa-solid fa-trash p-2 border rounded"></i>
@@ -274,12 +291,14 @@
                                 </li>
                                 <!-- RIGA 6 -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="col-6">
                                         <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                         Classe 80
                                     </div>
-                                    <div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span>
                                             <i class="fa-solid fa-pen p-2 border rounded"></i>
                                             <i class="fa-solid fa-trash p-2 border rounded"></i>
@@ -288,12 +307,14 @@
                                 </li>
                                 <!-- RIGA 7 -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="col-6">
                                         <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                         Classe 81
                                     </div>
-                                    <div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="badge rounded-pill text-bg-danger mx-3">Failed</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span>
                                             <i class="fa-solid fa-pen p-2 border rounded"></i>
                                             <i class="fa-solid fa-trash p-2 border rounded"></i>
@@ -302,19 +323,21 @@
                                 </li>
                                 <!-- RIGA 8 -->
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
+                                    <div class="col-6">
                                         <img class="rounded-circle" src="./assets/img/class-avatar.jpg" alt="" width="25px">
                                         Classe 82
                                     </div>
-                                    <div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span class="badge rounded-pill text-bg-success mx-3">Done</span>
+                                    </div>
+                                    <div class="col-3 col-md-2 text-center">
                                         <span>
                                             <i class="fa-solid fa-pen p-2 border rounded"></i>
                                             <i class="fa-solid fa-trash p-2 border rounded"></i>
                                         </span>
                                     </div>
                                 </li>
-                              </ul>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -325,7 +348,7 @@
                             <h3>F.A.Q.</h3>
                         </div>
                         <div class="border rounded-bottom px-2 py-3 bg-white">
-                            <div class="accordion" id="accordionExample">
+                            <!-- <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -362,7 +385,40 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>        
+                            </div>         -->
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Come aggiungere un nuovo studente?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maxime expedita perspiciatis odio vitae iste illum vel ut veniam itaque. Delectus, enim iste facere non omnis quibusdam modi quos saepe!</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Come posso accedere alle informazioni del mio account?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quis quod nostrum voluptate placeat. Consequuntur obcaecati nisi totam veritatis accusantium voluptas! Non quia unde sapiente officiis fugit sint, optio laudantium.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ut est ex dolorum excepturi praesentium nisi expedita incidunt fugiat. Ad nulla numquam tempora, consequuntur voluptatum quisquam. A labore sapiente vel?</div>
+                                  </div>
+                                </div>
+                              </div>
+                              
                         </div>
                         
                         

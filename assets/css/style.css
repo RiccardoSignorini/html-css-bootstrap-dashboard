@@ -42,6 +42,11 @@ header .input-group{
     color: white;
 }
 
+/* PARTE ALTA LATERALE */
+#lateral-top{
+    height: 95%;
+}
+
 /* PRINCIPLARE */
 #principal{
     height: 90vh;
