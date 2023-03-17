@@ -31,9 +31,9 @@
     </header>
 
     <main>
-        <div id="struttura">
+        <div id="struttura" class="d-flex">
             <!-- BARRA LATERALE -->
-            <div id="lateral-bar">
+            <div id="lateral-bar" class="text-center">
                 <!-- PARTE ALTA LATERALE -->
                 <div id="lateral-top">
                     <div>
@@ -52,30 +52,42 @@
                 </div>
             </div>
             <!-- PRINCIPALE -->
-            <div>
+            <div id="principal" class="overflow-scroll">
+                <!-- INTRO -->
                 <section id="top">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-4 col-12 py-3">
-                          <h3 class="d-inline">Boolean</h3>
-                          <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
-                          <span class="badge rounded-pill text-bg-secondary">3 app</span>
-                          <i class="fa-solid fa-angles-right"></i>
-                          <span class="badge rounded-pill text-bg-secondary">
-                            <i class="fa-solid fa-plus"></i>
-                          </span>
+                    <div>
+                      <div class="row justify-content-between">
+                        <div class="col-md-5 col-12 p-4">
+                            <div>
+                                <h3 class="d-inline">Boolean</h3> 
+                                <span class="badge rounded-pill text-bg-secondary ms-2 bg-opacity-50">Piano blaze</span>   
+                            </div>
+                            <span class="badge rounded-pill text-bg-secondary bg-opacity-50">3 app</span>
+                                <i class="fa-solid fa-angles-right"></i>
+                            <span class="badge rounded-pill text-bg-secondary bg-opacity-50 d-lg-none">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                            <span class="badge rounded-pill text-bg-secondary bg-opacity-50 d-none d-lg-inline">
+                                Boolean mobile app
+                            </span>
+                            <span class="badge rounded-pill text-bg-secondary bg-opacity-50 d-none d-lg-inline">
+                                Boolean web app
+                            </span>
+                            <span class="badge rounded-pill text-bg-secondary bg-opacity-50 d-none d-lg-inline">
+                                Boolean blog app
+                            </span>
                         </div>
-                        <div class="col-md-4 col-12 py-3">
+                        <div class="col-md-4 col-12 p-4">
                           <p>Studenti online negli ultimi 30 minuti</p>
                           <div>
                             <span>125</span>
                           </div>
                         </div>
-                        <div class="col-md-4 col-12 py-3">
+                        <div class="col-md-3 col-12 p-4">
                             <span>Nuovo studente</span>
                             <!-- OFFCANVAS -->
-                            <a class="btn btn-primary btn-apertura" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                <i class="fa-solid fa-plus-large text-light"></i>
+                            <a class="btn btn-primary border ms-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <i class="fa-solid fa-plus"></i>
                             </a>
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
@@ -171,8 +183,6 @@
                                     </div>
                                 </form>
                             </div>
-
-
                         </div>  
                       </div>
                     </div>
@@ -317,40 +327,40 @@
                         <div class="border rounded-bottom px-2 py-3 bg-white">
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Come aggiungere un nuovo studente?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem expedita quas error, cum temporibus mollitia quibusdam aperiam ut voluptate, animi alias voluptatem fuga reiciendis sequi vel, nam molestias unde ad?
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Come aggiungere un nuovo studente?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem expedita quas error, cum temporibus mollitia quibusdam aperiam ut voluptate, animi alias voluptatem fuga reiciendis sequi vel, nam molestias unde ad?
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                                 <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Come posso accedere alle informazioni del mio account?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea earum suscipit eligendi iusto tempore nulla ipsum ipsam? Esse, accusamus. Sequi odit quibusdam, esse ipsam numquam commodi ab unde ea.
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea earum suscipit eligendi iusto tempore nulla ipsum ipsam? Esse, accusamus. Sequi odit quibusdam, esse ipsam numquam commodi ab unde ea.
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                                 <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Posso usare questa dashboard da mobile?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure officiis harum aut, doloribus vero cupiditate amet magni maxime, placeat debitis alias facilis. Cum, ipsam adipisci nesciunt modi debitis ad.
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure officiis harum aut, doloribus vero cupiditate amet magni maxime, placeat debitis alias facilis. Cum, ipsam adipisci nesciunt modi debitis ad.
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>        
                         </div>

@@ -5,6 +5,7 @@ main{
 /* HEADER */
 header{
     background-color: rgb(255, 255, 255);
+    height: 10vh;
 }
 
 .fa-bell{
@@ -33,6 +34,8 @@ header .input-group{
 /* BARRA LATERALE */
 #lateral-bar{
     background-color: rgb(15, 41, 60);
+    width: 10rem;
+    height: 90vh;
 }
 
 #lateral-bar i{
@@ -40,13 +43,16 @@ header .input-group{
 }
 
 /* PRINCIPLARE */
-/* SEZIONE 1 */
+#principal{
+    height: 90vh;
+}
+
+/* INTRO */
 #top{
     background-color: rgb(0, 120, 228);
     color: white;
 }
 
-.btn-apertura{
-    background-color: grey;
-    opacity: 0.4;
+.btn-primary{
+    background-color: rgb(0, 120, 228) !important;
 }
