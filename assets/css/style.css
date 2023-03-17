@@ -8,6 +8,10 @@ header{
     height: 10vh;
 }
 
+header i{
+    margin: 0 0.4rem;
+}
+
 .fa-bell{
     color: rgb(255, 140, 32);
 }
